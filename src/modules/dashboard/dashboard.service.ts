@@ -29,7 +29,7 @@ export class DashboardService {
         console.log("affectation",affectationGroupe);
         queryBuilder.andWhere(isGroupe 
             ? 'production.affectationGroupe LIKE :affectationGroupe' : isEPE ?
-             'production.affectationEPE LIKE :affectationGroupe' : '"FILIALE "+production.affectationFiliale LIKE :affectationGroupe'   , 
+             'production.affectationEPE LIKE :affectationGroupe' : 'production.affectationFiliale LIKE :affectationGroupe'   , 
             { affectationGroupe: `%${affectationGroupe}%` });
     }
     
