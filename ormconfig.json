@@ -1,0 +1,42 @@
+[
+  {
+    "name": "prpacs",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "prpacs",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+      "dist/entities/**/*.entity{.ts,.js}"
+    ],
+    "migrations": [
+      "dist/migrations/prpacs/*.js"
+    ],
+    "cli": {
+      "migrationsDir": "src/migrations/prpacs"
+    }
+  },
+  {
+    "name": "prpacsidentity",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "prpacsidentity",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+      "dist/entities/prpacsidentity/**/*.entity{.ts,.js}"
+    ],
+    "migrations": [
+      "dist/migrations/prpacsidentity/*.js"
+    ],
+    "cli": {
+      "migrationsDir": "src/migrations/prpacsidentity"
+    }
+  }
+]
