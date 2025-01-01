@@ -24,7 +24,8 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+PRP is An integrated management software (ERP) for small and medium-sized enterprises (SMEs), small and medium-sized industries (SMIs), and large companies.
+
 
 ## Project setup
 
